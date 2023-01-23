@@ -18,9 +18,11 @@
 
     --color-bg : #36368b;
 
-    --container-width-lg : 75%;
+    --container-width-lg : 80%;
     --container-width-md : 90%;
     --container-width-sm : 96%;
+
+    --transition : all 400ms ease;
 }
 
 body {
@@ -37,5 +39,58 @@ body {
 }
 
 a {
+    color: var(--color-white);
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1, h2, h3, h4, h5 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.6rem;
+}
+h4 {
+    font-size: 1.2rem;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: transparent;
+    border-color: var(--color-white);
+    color: var(--color-white); 
+}
+
+.btn-primary {
+    background: var(--color-danger);
     color: var(--color-white);
 }
